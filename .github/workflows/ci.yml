@@ -61,3 +61,5 @@ jobs:
             Hi this is my summary with a list:
               - item 1
               - item 2
+
+            Here is a link to my run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
