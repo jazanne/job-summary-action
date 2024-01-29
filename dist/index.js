@@ -2763,6 +2763,7 @@ async function run() {
         for (const line of summary) {
             core.summary.addRaw(line);
         }
+        core.summary.write();
     }
     catch (error) {
         // Fail the workflow run if an error occurs
