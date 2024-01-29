@@ -9,7 +9,7 @@ export async function run(): Promise<void> {
     const summary: string[] = core.getMultilineInput('summary')
 
     for (const line of summary) {
-      core.summary.addRaw(line)
+      core.summary.addRaw(line, true)
     }
 
     core.summary.write()

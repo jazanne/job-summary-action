@@ -2761,7 +2761,7 @@ async function run() {
     try {
         const summary = core.getMultilineInput('summary');
         for (const line of summary) {
-            core.summary.addRaw(line);
+            core.summary.addRaw(line, true);
         }
         core.summary.write();
     }

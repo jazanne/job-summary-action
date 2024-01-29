@@ -43,7 +43,7 @@ describe('action', () => {
     expect(runMock).toHaveReturned()
 
     // Verify that all of the core library functions were called correctly
-    expect(setSummaryMock).toHaveBeenNthCalledWith(1, 'Just a test')
+    expect(setSummaryMock).toHaveBeenNthCalledWith(1, 'Just a test', true)
     expect(errorMock).not.toHaveBeenCalled()
   })
 })
