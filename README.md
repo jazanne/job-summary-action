@@ -2,6 +2,8 @@
 
 Use this action to add a markdown summary to your job
 
+![Example output](images/output.png)
+
 ## Example usage
 
 ```yaml
