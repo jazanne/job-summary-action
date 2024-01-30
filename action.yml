@@ -1,21 +1,18 @@
-name: 'Job summary'
-description: 'Easily add a job summary'
-author: 'Jaz White'
+name: Job summary
+description: Easily add a summary to your job
+author: Jaz White
 
-# Add your action's branding here. This will appear on the GitHub Marketplace.
 branding:
-  icon: 'heart'
-  color: 'red'
+  icon: align-justify
+  color: blue
 
-# Define your inputs here.
 inputs:
   summary:
-    description: 'Your markdown summary'
+    description: Your markdown summary
     required: true
 
 runs:
   using: composite
   steps:
     - shell: bash
-      run: |
-        echo "${{ inputs.summary }}" >> $GITHUB_STEP_SUMMARY
+      run: echo "${{ inputs.summary }}" >> $GITHUB_STEP_SUMMARY
