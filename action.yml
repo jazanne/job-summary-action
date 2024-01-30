@@ -18,6 +18,4 @@ runs:
   steps:
     - shell: bash
       run: |
-        for s in ${{ inputs.summary }}; do
-          echo "${{ inputs.summary }}" >> $GITHUB_STEP_SUMMARY
-        done
+        echo "${{ inputs.summary }}" >> $GITHUB_STEP_SUMMARY
