@@ -14,5 +14,10 @@ inputs:
     required: true
 
 runs:
-  using: node20
-  main: dist/index.js
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        for s in ${{ inputs.summary }}; do
+          echo "${{ inputs.summary }}" >> $GITHUB_STEP_SUMMARY
+        done
