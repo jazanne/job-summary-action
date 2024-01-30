@@ -5,7 +5,8 @@ Use this action to add a markdown summary to your job
 ## Example usage
 
 ```yaml
-name: Add job summary
+steps:
+  name: Add job summary
   uses: jazanne/job-summary-action@v1
   with:
     # Use valid multiline markdown with expressions
